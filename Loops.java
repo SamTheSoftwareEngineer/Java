@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 class WhileLoop {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("This loop will run as long as the input is > 0.");
         // Initialize loop varirable so that the loop with run (>0)
@@ -39,6 +40,7 @@ class WhileEven {
         System.out.println("This program keeps prompting the user to enter numbers ");
         System.out.println("as long as the entries are even. When the user enters an ");
         System.out.println("odd number.\n");
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
 
         int number = 0;
@@ -52,6 +54,7 @@ class WhileEven {
  
 class AppendWhile {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner input = new Scanner(System.in);
     String textToAdd = "";
     String text = "";
@@ -126,6 +129,7 @@ class DoWhile {
         System.out.println("This program keeps prompting the user to enter numbers ");
     System.out.println("as long as the entries are even. When the user enters an ");
     System.out.println("odd number.\n");
+    @SuppressWarnings("resource")
     Scanner input = new Scanner(System.in);
     // number not initialized since it will get a value in the body of the loop
     int number;
